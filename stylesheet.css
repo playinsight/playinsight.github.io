@@ -1,0 +1,46 @@
+@font-face {
+	font-family: WriteRight;
+	src: url('Write Righ.TTF');
+}
+
+@font-face {
+	font-family: Agata;
+	src: url('Agata.TTF');
+}
+
+body {
+	background: #1F406E;
+	text-align: center;
+
+	background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+	color: antiquewhite;
+	font-family: WriteRight;
+	font-size: 8em;
+}
+
+div {
+	display: inline-block;
+	margin-top: 7.5%;
+	height: 1.5em;
+
+	font-family: Agata;
+	font-size: 5em;
+
+	border-radius: 2em;
+
+	transition: font-size 400ms;
+}
+
+div:hover {
+	font-size: 5.5em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}

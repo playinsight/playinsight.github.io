@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Play Insight</title>
+
+        <link rel="stylesheet" type="text/css" href="ss.css" />
+
+        <script language="javascript" type="text/javascript" src="script.js"></script>
+
+        <meta charset="UTF-8">
+    </head>
+
+    <body onload="initialize()">
+        <code id="first">
+            <div id="intro" class="column">
+                <span>Choose Your Life With</span>
+            </div>
+
+            <div id="selection" class="column">
+                <span onclick="decideDisorder('Depression')">Depression</span>
+                <span onclick="decideDisorder('Anxiety')">Anxiety</span>
+                <span onclick="decideDisorder('Eating')">Eating Disorders</span>
+            </div>
+        </code>
+
+        <code id="second">
+            <div id="onlybae">
+                <div id="WellBeing">
+                    <span id = "progressbar" style="width: 100%"></span>
+
+                    <br />  
+
+                    <div>Well-Being Meter</div>
+                    <div id="feelings"></div>
+                </div>
+
+                <div id="Grade">
+                </div>
+
+                <div id="Illness">
+
+                </div>
+            </div>
+
+            <div id="saveme">
+                <div id="messagebox"></div>
+                <div id="scenarios">
+                    <div id="give"></div>
+                    <div id="fact"></div>
+                    <div id="enter">
+                        <span class="psuedobuttons" onclick="storyMove(1)"></span>
+                        <span class="psuedobuttons" onclick="storyMove(2)"></span>
+                        <span class="psuedobuttons" onclick="storyMove(3)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebae">
+                <div id="Calendar">
+                    <table>
+                        <tr>
+                            <td id = "nuts" colspan = "7">June</td>
+                        </tr>
+                        <tr id = "days">
+                            <td class = "dayS">Sun</td>
+                            <td class = "dayS">Mon</td>
+                            <td class = "dayS">Tues</td> 
+                            <td class = "dayS">Wed</td>
+                            <td class = "dayS">Thurs</td> 
+                            <td class = "dayS">Fri</td>
+                            <td class = "dayS">Sat</td> 
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td> 
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td> 
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td> 
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td> 
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>17</td> 
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td> 
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>24</td> 
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td> 
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td></td> 
+                            <td></td>
+                            <td></td>
+                            <td></td> 
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="Countdown">
+                </div>
+            </div>
+        </code>
+    </body>
+</html>

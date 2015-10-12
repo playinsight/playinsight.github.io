@@ -1,0 +1,349 @@
+@font-face {
+	font-family: ComicTypo;
+	src: url('Comic Typo.OTF');
+}
+
+@font-face {
+	font-family: khand;
+	src: url('khand.ttf');
+}
+
+@font-face {
+	font-family: Viga;
+	src: url('Viga.OTF');
+}
+
+body {
+	background-image: url('BlueBG.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	top: 0; left: 0;
+	margin: 0; padding: 0;
+
+	color: antiquewhite;
+}
+
+.column {
+	display: inline-block;
+	text-align: center;
+
+	width: 33.33%;
+	height: 75%;
+
+	vertical-align: top;
+}
+
+#intro {
+	margin-top: 10%;
+}
+
+#intro > span {
+	display: inline-block;
+	width: 75%;
+
+	padding: 5%;
+	
+	color: #FFFFFF;
+	font-family: Consolas, Courier, sans-serif;
+	font-size: 3.5em;
+
+	position: relative;
+	background: #0E0F21;
+	border: 4px solid #000000;
+}
+
+#intro > span:after, #intro > span:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#intro > span:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #0E0F21;
+	border-width: 30px;
+	margin-top: -30px;
+}
+#intro > span:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #000000;
+	border-width: 36px;
+	margin-top: -36px;
+}
+
+#selection {
+	margin-top: 7.5%;
+}
+
+#selection > span {
+	display: inline-block;
+	width: 50%;
+	margin-top: 7.5%;
+
+	color: black;
+	font-size: 2em;
+	font-weight: bold;
+
+	background-image: url('ggez.jpg');
+	background-size: cover;
+
+	padding: 5%;
+	padding-bottom: 7.5%;
+	border-radius: 10px;
+
+	cursor: pointer;
+
+	transition: box-shadow 500ms;
+}
+
+#selection > span:hover {
+	box-shadow: 0 0 2em coral;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+ *                                       *
+ *                                       *
+ *          Screen Separator~            *
+ *                                       *
+ *                                       *
+ * * * * * * * * * * * * * * * * * * * * */
+
+#onlybae {
+	display: inline-block;
+	width: 23.33%;
+	height: 100%;
+
+	position: relative;
+	float: left;
+}
+
+#WellBeing {
+	height: 25px;
+	width: 400px;
+	position: relative;
+	background: #555;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+#WellBeing > span {
+	display: block;
+	height: 100%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	box-shadow: 
+		inset 0 2px 9px rgba(255,255,255,0.3),
+		inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+}
+
+#WellBeing > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: linear-gradient(
+		-45deg, 
+		rgba(255, 255, 255, .2) 25%, 
+		transparent 25%, 
+		transparent 50%, 
+		rgba(255, 255, 255, .2) 50%, 
+		rgba(255, 255, 255, .2) 75%, 
+		transparent 75%, 
+		transparent
+		);
+	z-index: 1;
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+
+
+#WellBeing:first-child {
+	text-align: center;
+
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#Grade {
+	font-family: khand;
+	src: url('khand.ttf');
+	background-image: url('ggez.jpg');
+
+	margin-top: 22%;
+	margin-left: 30%;
+
+	text-align: center;
+	font-size: 9em;
+
+	width: 65%;
+
+	color: #D13636;
+}
+
+#Illness {
+	width: 65%;
+	height: 5%;
+
+	bottom: 0;
+	position: absolute;
+
+	padding: 0.5em;
+	padding-bottom: 0.25em;
+
+	vertical-align: bottom;
+
+	font-family: Viga;
+	src: url('Viga.OTF');
+	font-size: 3em;
+}
+
+/*
+ *
+ * CONTAINER SEPARATOR
+ *
+ */
+
+#saveme {
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+}
+
+#messagebox {
+	margin-top: 2.5%;
+
+	width: 30%;
+	height: 15%;
+}
+
+#scenarios {
+	margin-top: 12.5%;
+	margin-left: 10%;
+
+	width: 90%;
+	height: 33.33%;
+
+	padding: 8px;
+}
+
+#give, #fact {
+	font-family: Viga;
+	src: url('Viga.OTF');
+	font-size: 2.7em;
+
+	word-wrap: break-word;
+}
+
+#scenarios span {
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+
+	padding: 5px;
+
+	font-family: Viga;
+	src: url('Viga.OTF');
+	font-size: 2em;
+
+	border: 2px solid black;
+
+	cursor: pointer;
+
+	transition: font-size 0.1s;
+}
+
+#scenarios span:hover {
+	font-size: 2.05em;
+}
+
+/*
+ *
+ * CONTAINER SEPARATOR
+ *
+ */
+
+#sidebae {
+	display: inline-block;
+	width: 30%;
+	height: 100%;
+
+	float: right;
+	text-align: center;
+}
+
+#Calendar {
+	display: inline-block;
+	margin-top: 7.5%;
+
+	width: 86%;
+	height: 34%;
+
+	border: 3px solid #000000;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#nuts {
+	text-align: center;
+	height: 3vh;
+	background-color: red;
+	vertical-align: middle;
+}
+
+.dayS {
+	text-align: center;
+	height: 3vh;
+	background-color: darkblue;
+	color: antiquewhite;
+	vertical-align: middle;
+}
+
+td {
+	vertical-align: top;
+	text-align: right;
+	color: black;
+	width: 14.2857%;
+	height: 5vh;
+	border: 1px solid antiquewhite;
+	background-color: white;
+}
+
+td img {
+	float: left;
+	height: 100%;
+}
+
+#Countdown {
+	font-family: Viga;
+	src: url('Viga.OTF');
+	display: inline-block;
+	font-size: 3.5em;
+	width: 85%;
+}
